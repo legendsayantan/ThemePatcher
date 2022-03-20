@@ -3,7 +3,7 @@ Tired of buying themes in Oppo or Realme device? Use This Patcher to unlock all 
 
 This script lets you unlock all the paid themes, fonts and wallpapers for free from the Theme store in any Oppo or Realme device.
 ## Disclaimer
-This Patcher only works in Oppo or Realme devices (ColorOs and RealmeUi) and **was not tested** to any other device. BE CAREFUL BEFORE USING IT TO OTHER DEVICES.
+This Patcher **was not tested** to any other device. BE CAREFUL BEFORE USING IT TO OTHER DEVICES.
 
 ## How to use
 This script is for **Windows** and needs **ADB** (Android Debug Bridge) installed to work. [Install ADB](https://developer.android.com/studio/releases/platform-tools)
