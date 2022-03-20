@@ -35,7 +35,7 @@ If you don't have **ADB** installed and want to do it through [WebADB](https://a
 
 In that case- enable developer options, enable usb debugging and disable permission monitoring, then connect your android device to WebADB website.
 
-After that, copy these code snippets and run inside the interactive shell -
+After that- choose any theme and take a free trial, then copy these code snippets and run inside the interactive shell -
 
 1. Patch themes
 ```
