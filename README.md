@@ -24,11 +24,9 @@ You need to repeat the following actions every time you want to get a paid theme
 
 6. Open Theme Store in the android device, choose whatever paid themes you like and click **Free trial**.
 
-7. Type **cmd** in the adress bar of File Explorer and hit enter. This should open the command prompt terminal in your pc.
-
-8. Type **ThemePatcher** in the terminal and hit enter.
-
-9. ThemePatcher should now automatically detect your device and all of the installed trial themes , fonts or live wallpapers... And will automatically convert them to permanent themes !
+7. Open the file **ThemePatcher.bat** you just downloaded in your pc.
+ 
+8. ThemePatcher should now automatically detect your device and all of the installed trial themes , fonts or live wallpapers... And will automatically convert them to permanent themes !
 
 Once you're done, just close the terminal window and unplug your android device from the pc...
 
