@@ -1,13 +1,14 @@
 @ECHO OFF
 echo.
-echo -------------------------------------------------------------------
-echo ---------------Welcome to Oppo-Realme Theme patcher!---------------
-echo --------------------------------------------------by legendsayantan
-echo Take a free trial from theme store, then run this batch file to make them permanent :)
+echo ---------------------------------------------------------------------
+echo --------------- Welcome to Oppo-Realme Theme patcher! ---------------
+echo ----------------------------------------------------by legendsayantan
+echo.
+echo Take a free trial from theme store, then run this script to make them permanent :)
 echo.
 echo using && WHERE adb
 IF %ERRORLEVEL% NEQ 0 (
-ECHO ERROR ENCOUNTERED- Please put this bat file in ADB directory of your system.
+ECHO ERROR ENCOUNTERED- adb.exe not found. Try to redownload ThemePatcher from https://github.com/legendsayantan/ThemePatcher
 PAUSE
 exit
 )
@@ -17,12 +18,12 @@ set /p device=<tempfile.tmp
 set nodevice=no devices/emulators found
 set multidevice=more than one device/emulator
 IF "%device%" EQU "%multidevice%" (
-ECHO ERROR ENCOUNTERED- More than one android devices are connected through adb.
+ECHO ERROR ENCOUNTERED- More than one android devices are connected. Disconnect them or turn of usb debugging.
 PAUSE
 exit
 )
 IF "%device%" EQU "%nodevice%" (
-ECHO ERROR ENCOUNTERED- No android devices are connected through adb.
+ECHO ERROR ENCOUNTERED- No android devices are connected. Make sure you have usb debugging turned on.
 PAUSE
 exit
 ) ELSE (echo Android device detected , connecting ...)
