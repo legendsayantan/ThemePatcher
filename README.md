@@ -6,9 +6,7 @@ This script lets you unlock all the paid themes, fonts and wallpapers for free f
 This Patcher **was not tested** to any device other than Oppo and Realme. BE CAREFUL BEFORE USING IT TO OTHER DEVICES.
 
 ## How to use
-This script is for **Windows** and needs **ADB** (Android Debug Bridge) installed to work. [Install ADB](https://developer.android.com/studio/releases/platform-tools)
-
-While setting up , If you get any prompt in your android device asking you to **allow usb debugging** , click on the allow button.
+This script is for **Windows** . While setting up , If you get any prompt in your android device asking you to **allow usb debugging** , click on the allow button.
 
 You need to repeat the following actions every time you want to get a paid theme/font/live wallpaper as free.
 
@@ -18,24 +16,22 @@ You need to repeat the following actions every time you want to get a paid theme
 
 3. Connect your phone to the Windows pc using an usb cable.
 
-4. Open **File Explorer** in the pc , then navigate to the directory in which you have **ADB** installed.
- 
-5. Download the provided file **ThemePatcher.bat** into that exact directory.
+4. Download and extract the provided release file **ThemePatcher.zip**.
 
-6. Open Theme Store in the android device, choose whatever paid themes you like and click **Free trial**.
+5. Open Theme Store in the android device, choose whatever paid themes you like and click **Free trial**.
 
-7. Open the file **ThemePatcher.bat** you just downloaded in your pc.
+7. Run the file **ThemePatcher.bat** in the extracted folder.
  
-8. ThemePatcher should now automatically detect your device and all of the installed trial themes , fonts or live wallpapers... And will automatically convert them to permanent themes !
+8. ThemePatcher should now automatically detect your device and all of the installed trial themes , fonts or live wallpapers... And will automatically convert them to permanent !
 
 Once you're done, just close the terminal window and unplug your android device from the pc...
 
 ## Alternate method
-If you don't have **ADB** installed and want to do it through [WebADB](https://app.webadb.com) , you cannot run the entire batch file.
+If you want to do it through [WebADB](https://app.webadb.com) , you cannot run the entire batch file.
 
-In that case- enable developer options, enable usb debugging and disable permission monitoring, then connect your android device to WebADB website.
+In that case - enable developer options, enable usb debugging and disable permission monitoring, then connect your android device to WebADB website.
 
-After that- choose any theme and take a free trial, then copy these code snippets and run inside the interactive shell -
+After that - choose any theme/font/live wallpaper and take a free trial, then copy these code snippets and run inside the interactive shell -
 
 1. Patch themes
 ```
@@ -63,5 +59,8 @@ settings put secure persist.sys.oppo.live_wp_uuid -1
 settings put secure persist.sys.trial.live_wp 0
 ```
 Keep in mind , you need to run the entire code of a specific category to correctly patch it. Otherwise, it may not work.
+
+## Contribute
+To contribute , create an issue or pull request. Any contributions or improvements are welcome.
 
 Thank you.
