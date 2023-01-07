@@ -2,17 +2,21 @@
 SETLOCAL enableDelayedExpansion
 echo.
 echo ---------------------------------------------------------------------
-echo --------------- Welcome to Oppo-Realme Theme patcher! ---------------
+echo --------------- Welcome to Oppo-Realme Theme patcher! ----------------
 echo ----------------------------------------------------by legendsayantan
 echo.
 echo Take a free trial from theme store, then run this script to make them permanent :)
 echo.
-echo using && WHERE adb
+set ADB=adb.exe
+FOR /F %%x IN ('tasklist /NH /FI "IMAGENAME eq %ADB%"') DO IF %%x == %ADB% (
+  adb kill-server
+)
+adb start-server
 IF %ERRORLEVEL% NEQ 0 (
-ECHO ERROR - adb.exe not found. Try to redownload ThemePatcher from https://github.com/legendsayantan/ThemePatcher
-color c
-PAUSE
-exit
+    ECHO ERROR - adb.exe not found. Try to redownload ThemePatcher from https://github.com/legendsayantan/ThemePatcher
+    color c
+    PAUSE
+    exit
 )
 echo.
 adb reconnect >tempfile.tmp
@@ -24,22 +28,18 @@ ECHO ERROR - More than one android devices are connected. Disconnect them or tur
 echo 0 >tempfile.tmp
 del tempfile.tmp
 color c
-PAUSE
-exit
 )
 IF "%device%" EQU "%nodevice%" (
 ECHO ERROR - No android devices are connected. Make sure you have usb debugging turned on.
 echo 0 >tempfile.tmp
 del tempfile.tmp
 color c
-PAUSE
-exit
 ) ELSE (
-echo Android device detected , connecting ...
 color e
 )
-timeout /t 10 /nobreak
-adb shell settings get secure oppo_device_name >tempfile.tmp
+echo.
+echo Looking for android devices on USB...
+adb wait-for-device shell settings get secure oppo_device_name >tempfile.tmp
 echo.
 set /p deviceName=<tempfile.tmp
 IF "%deviceName%" NEQ "%nullT%" (
@@ -82,6 +82,7 @@ IF !val! NEQ 0 (
     ECHO ERROR - Make sure to Disable Permission Monitoring in Developer Options.
     color c
     echo.
+    adb kill-server
     PAUSE
     exit
 ) ELSE (
@@ -107,6 +108,7 @@ IF !val! NEQ 0 (
     ECHO ERROR - Make sure to Disable Permission Monitoring in Developer Options.
     color c
     echo.
+    adb kill-server
     PAUSE
     exit
 ) ELSE (
@@ -127,6 +129,7 @@ IF !val! NEQ 0 (
     ECHO ERROR - Make sure to Disable Permission Monitoring in Developer Options.
     color c
     echo.
+    adb kill-server
     PAUSE
     exit
 ) ELSE (
@@ -141,5 +144,6 @@ ECHO Successfully converted to permanent.
 ) ELSE (echo Live Wallpaper Status : Permanent)
 echo 0 >tempfile.tmp
 del tempfile.tmp
+adb kill-server
 echo.
 PAUSE
