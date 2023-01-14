@@ -11,9 +11,9 @@ This Patcher **was not tested** on any device other than Oppo and Realme. BE CAR
 ## How to use the offline unlocker
 
 ### Choose your computer os
-1. [Windows](https://github.com/legendsayantan/ThemePatcher/edit/main/README.md#windows)
-2. [Linux](https://github.com/legendsayantan/ThemePatcher/edit/main/README.md#linux)
-3. [Mac](https://github.com/legendsayantan/ThemePatcher/edit/main/README.md#mac)
+1. [Windows](https://github.com/legendsayantan/ThemePatcher/README.md#windows)
+2. [Linux](https://github.com/legendsayantan/ThemePatcher/README.md#linux)
+3. [Mac](https://github.com/legendsayantan/ThemePatcher/README.md#mac)
 
 While setting up , If you get any prompt in your android device asking you to **allow usb debugging** , click on the allow button.
 
