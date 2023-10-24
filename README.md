@@ -3,10 +3,12 @@ Tired of buying themes in Oppo or Realme device? Use This Patcher to unlock all 
 
 This script lets you unlock all the paid themes, fonts and wallpapers for free from the Theme store in any Oppo or Realme device.
 
-### This is the offline unlocker. Find the online unlocker at 
+### Alternatives -
+- Web Application
 1. [https://legendsayantan.is-a.dev/themepatcher](https://legendsayantan.is-a.dev/themepatcher) (Lite)
 2. [https://legendsayantan.github.io/themepatcher](https://legendsayantan.github.io/themepatcher) (Legacy)
-
+- Shizuku Application
+1. [ShizuTools](https://github.com/legendsayantan/ShizuTools)
 ## Disclaimer
 This Patcher **was not tested** on any device other than Oppo and Realme. BE CAREFUL BEFORE USING IT WITH OTHER DEVICES.
 
