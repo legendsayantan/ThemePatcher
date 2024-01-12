@@ -1,7 +1,7 @@
 # ThemePatcher
-Tired of buying themes in Oppo or Realme device? Use This Patcher to unlock all the paid themes , for free !
+Tired of buying themes? Use This Patcher to unlock all the paid themes , for free !
 
-This script lets you unlock all the paid themes, fonts and wallpapers for free from the Theme store in any Oppo or Realme device.
+This script lets you unlock all the paid themes, fonts and wallpapers for free from the Theme store in any Oppo/Realme/Oneplus device.
 
 ### Alternatives -
 - Web Application
